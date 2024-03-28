@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Weapons Expanded - Coilguns</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RangedLight -->
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/ThingDef[defName="VWEFT_Gun_GaussRevolver"]</xpath>
+								<value>
+									<weaponClasses>
+										<li>RangedLight</li>
+									</weaponClasses>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+			
+		</operations>
+	</match>
+</Operation>
+</Patch>

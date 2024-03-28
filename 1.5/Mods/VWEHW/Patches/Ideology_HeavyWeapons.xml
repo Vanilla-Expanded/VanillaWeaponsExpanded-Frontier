@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<li Class="PatchOperationFindMod">
+					<mods>
+						<li>Vanilla Weapons Expanded - Heavy Weapons</li>
+					</mods>
+					<match Class="PatchOperationSequence">
+						<operations>
+							<!-- RangedHeavy -->
+							<li Class="PatchOperationAdd">
+								<xpath>/Defs/ThingDef[defName="VWEFT_Gun_HandheldGatlingGun"]</xpath>
+								<value>
+									<weaponClasses>
+										<li>RangedHeavy</li>
+									</weaponClasses>
+								</value>
+							</li>
+						</operations>
+					</match>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

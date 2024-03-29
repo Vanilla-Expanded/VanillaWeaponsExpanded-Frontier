@@ -12,6 +12,15 @@
     </prerequisites>
     <researchViewX>9.00</researchViewX>
     <researchViewY>4.80</researchViewY>
+	<generalRules>
+  <rulesStrings>
+    <li>subject->echoes of the frontier</li>
+    <li>subject_story->revived the rugged spirit of the frontier, crafting firearms that embody the essence of survival and exploration</li>
+    <li>subject_story->perfected the art of gunsmithing to produce revolvers, rifles, and shotguns, tools as much for defense as for forging ahead into the unknown</li>
+    <li>subject_story->imbued each weapon with the reliability and durability needed to face the untamed wilds and protect burgeoning communities</li>
+    <li>subject_gerund->carving out civilization's edge with the steadfast companionship of frontier firearms</li>
+  </rulesStrings>
+</generalRules>
   </ResearchProjectDef>
 
 </Defs>

@@ -1,9 +1,6 @@
 <loadFolders>
 	
-	<v1.3>
-		<li>/</li>
-		<li>1.3</li>
-	</v1.3>
+	
 	<v1.4>
 		<li>/</li>
 		<li>1.4</li>
@@ -16,6 +13,14 @@
 		<li IfModActive="VanillaExpanded.VWEL">1.5/Mods/VWEL</li>
         <li IfModActive="VanillaExpanded.VWEQ">1.5/Mods/VWEQ</li>			
 	</v1.5>
+	<v1.6>
+		<li>/</li>
+		<li>1.6</li>
+        <li IfModActive="VanillaExpanded.VWEC">1.6/Mods/VWEC</li>	
+        <li IfModActive="VanillaExpanded.VWEHW">1.6/Mods/VWEHW</li>		
+		<li IfModActive="VanillaExpanded.VWEL">1.6/Mods/VWEL</li>
+        <li IfModActive="VanillaExpanded.VWEQ">1.6/Mods/VWEQ</li>			
+	</v1.6>
 </loadFolders>
 
 

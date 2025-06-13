@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<Patch>
-	<Operation Class="PatchOperationFindMod">
-		<mods>
-			<li>Vanilla Weapons Expanded - Coilguns</li>
-		</mods>
+<Defs>
 
-		<match Class="PatchOperationSequence">
-			<operations>
-				<li Class="PatchOperationAdd">
-
-					<xpath>/Defs</xpath>
-					<value>
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>VWEFT_Gun_GaussRevolver</defName>
 		<label>gauss revolver</label>
@@ -93,7 +83,7 @@
 		</comps>
 	</ThingDef>
 
-	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
+	<VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
 		<defName>VWEFT_Bullet_GaussRevolver</defName>
 		<label>gauss revolver sabot</label>
 		<projectile>
@@ -110,7 +100,7 @@
        </li>
           </extraDamages>
 		</projectile>
-		<thingClass>VFECore.GaussProjectile</thingClass>
+		<thingClass>VEF.Weapons.GaussProjectile</thingClass>
 		<graphicData>
 			<texPath>Projectiles/Proj_CoilgunFadeIn</texPath>
 			<texPathFadeOut>Projectiles/Proj_CoilgunFadeOut</texPathFadeOut>
@@ -149,14 +139,8 @@
 			<li>Marble</li>
 			<li>SmoothedMarble</li>
 		</stopWhenHitAt>
-	</VFECore.ExpandableProjectileDef>
-					</value>
-				</li>
-				
-				<li Class="PatchOperationAdd">
+	</VEF.Weapons.ExpandableProjectileDef>
 
-					<xpath>/Defs</xpath>
-					<value>
 	<ThingDef ParentName="BaseHumanMakeableGun">
 		<defName>VWEFT_Gun_GaussRepeater</defName>
 		<label>gauss repeater</label>
@@ -240,7 +224,7 @@
 		</comps>
 	</ThingDef>
 
-	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
+	<VEF.Weapons.ExpandableProjectileDef ParentName="BaseBullet">
 		<defName>VWEFT_Bullet_GaussRepeater</defName>
 		<label>gauss repeater sabot</label>
 		<projectile>
@@ -257,7 +241,7 @@
        </li>
           </extraDamages>
 		</projectile>
-		<thingClass>VFECore.GaussProjectile</thingClass>
+		<thingClass>VEF.Weapons.GaussProjectile</thingClass>
 		<graphicData>
 			<texPath>Projectiles/Proj_CoilgunFadeIn</texPath>
 			<texPathFadeOut>Projectiles/Proj_CoilgunFadeOut</texPathFadeOut>
@@ -296,12 +280,6 @@
 			<li>Marble</li>
 			<li>SmoothedMarble</li>
 		</stopWhenHitAt>
-	</VFECore.ExpandableProjectileDef>
-					</value>
-				</li>
-			</operations>
-		</match>
-	</Operation>
+	</VEF.Weapons.ExpandableProjectileDef>
 
-
-</Patch>
+</Defs>

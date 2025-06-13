@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Ideology</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Anything that herit from BaseMakeableGrenade already have Ranged class -->
+				<!-- Anything that herit from BaseMeleeWeapon_Blunt_Quality already have MeleeBlunt class -->
+				<!-- Anything that herit from BaseMeleeWeapon_Sharp_Quality already have MeleePiercer class -->
+				<!-- Anything that herit from BaseWeaponNeolithic already have Neolithic class -->
+				<!-- RangedLight -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="VWEFT_Gun_FrontierPistol" or defName="VWEFT_Gun_VolcanicPistol" or defName="VWEFT_Gun_HeavyRevolver"]</xpath>
+					<value>
+						<weaponClasses>
+							<li>RangedLight</li>
+						</weaponClasses>
+					</value>
+				</li>
+				<!-- ShortShots < 19.9 range -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="VWEFT_Gun_RepeatingShotgun"]</xpath>
+					<value>
+						<weaponClasses>
+							<li>ShortShots</li>
+						</weaponClasses>
+					</value>
+				</li>
+				<!-- LongShots > 35 range -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="VWEFT_Gun_RollingBlockRifle"]</xpath>
+					<value>
+						<weaponClasses>
+							<li>LongShots</li>
+						</weaponClasses>
+					</value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>
